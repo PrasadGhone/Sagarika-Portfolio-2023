@@ -133,11 +133,11 @@
                         <div style="clear: both;"></div>
                     </div>
                 </div>
-                <div id="securecontext" class="error">
+                <!--<div id="securecontext" class="error">
                     <p>
                         Sorry, but password protection only works over a secure connection. Please load this page via HTTPS.
                     </p>
-                </div>
+                </div>-->
                 <div id="nocrypto" class="error">
                     <p>
                         Your web browser appears to be outdated. Please visit this page using a modern browser.
@@ -170,11 +170,11 @@
             return;
         }
 
-        if (!isSecureContext) {
-            document.querySelector("#passArea").style.display = "none";
-            document.querySelector("#securecontext").style.display = "block";
-            return;
-        }
+        //if (!isSecureContext) {
+      //      document.querySelector("#passArea").style.display = "none";
+        //    document.querySelector("#securecontext").style.display = "block";
+       //     return;
+    //    }
 
         if (!crypto.subtle) {
             document.querySelector("#passArea").style.display = "none";
